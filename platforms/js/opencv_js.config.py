@@ -2,6 +2,23 @@
 
 core = {
     '': [
+        'bitwise_or', 'bitwise_and', 'bitwise_not', 'compare', \
+        'inRange', 'split', 'sqrt', 'add', 'subtract'
+    ]
+}
+
+imgproc = {
+    '': [
+        'HoughLinesP','approxPolyDP','arcLength', 'boxFilter', \
+        'sqrBoxFilter', 'calcHist', 'contourArea', 'cvtColor', \
+        'findContours', 'getPerspectiveTransform', 'resize', \
+        'warpPerspective'
+    ]
+}
+
+"""
+core = {
+    '': [
         'absdiff', 'add', 'addWeighted', 'bitwise_and', 'bitwise_not', 'bitwise_or', 'bitwise_xor', 'cartToPolar',
         'compare', 'convertScaleAbs', 'copyMakeBorder', 'countNonZero', 'determinant', 'dft', 'divide', 'eigen',
         'exp', 'flip', 'getOptimalDFTSize','gemm', 'hconcat', 'inRange', 'invert', 'kmeans', 'log', 'magnitude',
@@ -101,5 +118,5 @@ calib3d = {'': ['findHomography', 'calibrateCameraExtended', 'drawFrameAxes', 'e
                 'getDefaultNewCameraMatrix', 'initUndistortRectifyMap', 'Rodrigues', \
                 'solvePnP', 'solvePnPRansac', 'solvePnPRefineLM']}
 
-
-white_list = makeWhiteList([core, imgproc, objdetect, video, dnn, features2d, photo, aruco, calib3d])
+"""
+white_list = makeWhiteList([core, imgproc])
